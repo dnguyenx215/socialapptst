@@ -60,7 +60,6 @@ public class CustomAPIResponse<T> {
     }
 
     // Getters và Setters
-
     public String getStatus() {
         return status;
     }
