@@ -5,6 +5,7 @@ import com.social.net.model.User;
 import com.social.net.repository.PostRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
 
 import java.util.List;
 
@@ -29,6 +30,7 @@ public class PostService {
     }
 
     // Tạo bài đăng mới
+    @Transactional
     public Post createPost(User user, String content, String mediaUrl) {
         Post post = new Post();
         post.user = user;
@@ -64,6 +66,7 @@ public class PostService {
     }
 
     // Xoá bài đăng
+    @Transactional
     public boolean deletePost(Long id) {
         return postRepository.deleteById(id);
     }

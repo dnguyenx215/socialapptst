@@ -41,6 +41,8 @@ public class PostsController {
 
     // Tạo bài đăng mới một cách thực tế:
     @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response createPost(Post postData) {
         // Kiểm tra xem có truyền thông tin user id hay không
         if (postData.user == null || postData.user.id == null) {
