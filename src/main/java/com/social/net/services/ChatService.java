@@ -5,6 +5,8 @@ import com.social.net.model.User;
 import com.social.net.repository.ChatMessageRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
+import jakarta.transaction.Transactional;
+
 import java.util.List;
 
 @ApplicationScoped
@@ -19,6 +21,7 @@ public class ChatService {
     /**
      * Gửi tin nhắn từ sender sang receiver, lưu vào DB và trả về đối tượng ChatMessage.
      */
+    @Transactional
     public ChatMessage sendMessage(Long senderId, Long receiverId, String content) {
         User sender = userService.findById(senderId);
         User receiver = userService.findById(receiverId);
