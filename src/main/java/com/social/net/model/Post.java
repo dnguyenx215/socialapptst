@@ -7,13 +7,14 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "posts")
 public class Post extends PanacheEntityBase {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long id;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
-    public User user;
+    public User user; // Giả sử bạn có 1 entity User
 
     @Column(columnDefinition = "TEXT")
     public String content;

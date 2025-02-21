@@ -80,6 +80,15 @@
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.quarkus/quarkus-undertow-websockets -->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-undertow-websockets</artifactId>
+            <version>2.6.1.Final</version>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>
