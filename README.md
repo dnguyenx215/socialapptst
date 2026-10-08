@@ -76,3 +76,13 @@ Create your first JPA entity
 Easily start your REST Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+## EnglishUp – ứng dụng học tiếng Anh
+
+Giao diện web tĩnh nằm trong `src/main/resources/META-INF/resources/`, Quarkus tự phục vụ tại `/`
+(chạy `./mvnw quarkus:dev` rồi mở <http://localhost:8080/>). Cũng có thể mở trực tiếp `index.html` trong trình duyệt.
+
+Tính năng: ~220 từ vựng theo 13 chủ đề (A1–C1, có phiên âm, ví dụ, phát âm), thẻ ghi nhớ lặp lại ngắt quãng (Leitner),
+trắc nghiệm, chính tả, luyện nghe, 12 bài ngữ pháp có bài tập, bảng và luyện động từ bất quy tắc,
+theo dõi XP/streak/mục tiêu ngày, xuất/nhập tiến độ, chế độ tối.
+Mở rộng từ vựng: thêm dòng `từ|phiên âm|loại từ|nghĩa|ví dụ` vào `js/data-words.js`.

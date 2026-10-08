@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnglishUp – Học tiếng Anh</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">📘 EnglishUp</div>
+  <nav id="nav">
+    <button data-view="home">Trang chủ</button>
+    <button data-view="vocab">Từ vựng</button>
+    <button data-view="flash">Thẻ ghi nhớ</button>
+    <button data-view="quiz">Trắc nghiệm</button>
+    <button data-view="spell">Chính tả</button>
+    <button data-view="listen">Nghe</button>
+    <button data-view="grammar">Ngữ pháp</button>
+    <button data-view="verbs">Động từ BQT</button>
+    <button data-view="progress">Tiến độ</button>
+  </nav>
+  <div class="stats"><span id="xp">⭐ 0</span><span id="streak">🔥 0</span><button id="theme" title="Đổi giao diện">🌓</button></div>
+</header>
+<main id="app"></main>
+<footer>EnglishUp · dữ liệu học lưu trên trình duyệt của bạn (localStorage)</footer>
+<script src="js/data-words.js"></script>
+<script src="js/data-grammar.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
